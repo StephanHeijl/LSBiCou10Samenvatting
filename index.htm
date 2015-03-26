@@ -1,0 +1,87 @@
+<html>
+	<head>
+		<title>Samenvatting bord Life Science Bionformatica Course 10b</title>
+		<style>
+			body, html {
+				padding: 0;
+				margin: 0;
+				font-family: sans-serif;
+				font-size: 10pt;
+			}
+			#board {
+				width: 100%;
+				position: relative;
+			}
+			
+			#board-image {
+				width: 100%;
+			}
+			
+			#board #board-overlay {
+				width: 100%;
+				position: absolute;
+				top: 0px;
+			}
+			.marker {
+				width: 10%;
+				height: 10%;
+				top: 0%;
+				left: 0%;
+				border: 2px solid white;
+				position: absolute;
+				box-shadow: 0px 0px 5px rgba(0,0,0,0.3), inset 0px 0px 5px rgba(0,0,0,0.3);
+				opacity: 0;
+				transition: opacity 0.3s;
+			}
+			
+			.marker:last-child {
+				opacity: 1;	
+			}
+			.marker:hover {
+				opacity: 1;	
+			}
+			.marker .text {
+				background: white;
+				width: 98%;
+				padding: 1%;
+				left: -2px;
+				position: absolute;
+				top: 100%;
+				border: 2px solid white;
+			}
+		</style>
+		
+		<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+		
+		<script src="boardData.json"></script>
+			
+		<script>
+			$(function() {
+				protoMarker = $(".marker").first()
+				$.each(boardData, function(e,element) {
+					newMarker = protoMarker.clone()
+					newMarker.css({ "top":element.y+"%",
+								    "left":element.x+"%",
+								    "width":element.w+"%",
+								    "height":element.h+"%"
+								  })
+					newMarker.children(".text").html(element.html)
+					newMarker.appendTo("#board")
+				});
+			});
+		</script>
+		
+	</head>
+	
+	<body>	
+		<div id="board">
+			<div class="marker">
+				<div class="text"></div>
+			</div>
+			<img id="board-image" src="Board.png">
+			<img id="board-overlay" src="overlay.svg"></object>
+			
+		</div>
+		
+	</body>
+</html>
