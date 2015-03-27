@@ -1,4 +1,4 @@
-boardData = [
+boardData=[
     {
         "x": 1,
         "y": 14,
@@ -76,253 +76,248 @@ boardData = [
         "h": 7,
         "html": "Avoiding immune system"
     },
-	{
+    {
         "x": 25,
         "y": 15,
         "w": 32,
         "h": 8,
-        "html": "Oncogenen: RAS, PI-3-kinase, EGFR"
+        "html": "Oncogenen: RAS, PI-3-kinase, EGFR",
+        "references": {
+            "Oncogenen": {
+                "description": "Oncogenen zijn genen die, wanneer hun expressie verhoogt is, tumorvorming bevorderen."
+            },
+            "RAS": {
+                "url": "http://en.wikipedia.org/wiki/Ras_superfamily"
+            },
+            "PI-3-kinase": {
+                "url": "http://en.wikipedia.org/wiki/Phosphoinositide_3-kinase"
+            },
+            "EGFR": {
+                "url": "http://en.wikipedia.org/wiki/Epidermal_growth_factor_receptor",
+                "description": "Epidermal growth factor receptor"
+            }
+        }
     },
-	{
+    {
         "x": 25,
         "y": 23,
         "w": 28,
         "h": 8,
         "html": "Tumorsupressor: P53, PRB, APE"
     },
-	{
+    {
         "x": 26.5,
         "y": 35,
         "w": 17,
         "h": 6,
         "html": "RTK &#8594; GRB2 / SOS / EAS"
     },
-	{
+    {
         "x": 26.5,
         "y": 41,
         "w": 33,
         "h": 6,
         "html": "GPCR --> G<sub>q</sub>/G<sub>s</sub> &#8594; PIP<sub>2</sub> &#8594; IP<sub>3</sub> &#8594; CA<sup>2+</sup> CICR"
     },
-	
-	{
+    {
         "x": 34,
         "y": 45,
         "w": 7,
         "h": 8,
         "html": "Uitwisseling bij de G<sub>q</sub>/G<sub>s</sub> reactie: GIP wordt GDP"
     },
-	
-	{
+    {
         "x": 27,
         "y": 52,
         "w": 15,
         "h": 33,
         "html": "<pre>T1-E1  ----&#8594;  T1-S* \n  &#8593;           E1-P-S \n  |            | \n  |            | \n  |            &#8595; \n T2-E2* &#8592;----  T2-S \n              E2-P-S</pre>(* = instabiel) "
     },
-	
-	{
+    {
         "x": 26,
         "y": 77,
         "w": 9,
         "h": 15,
         "html": "NA<sup>+</sup>/K<sup>+</sup> AGFase <br/> CA<sup>2+</sup> AFFase<br/> Glucose"
     },
-	
-	{
+    {
         "x": 60,
         "y": 8,
         "w": 12,
         "h": 15,
         "html": "Verhoogde expressie bevordert tumorvorming"
     },
-	
-	{
+    {
         "x": 59,
         "y": 22,
         "w": 12,
         "h": 15,
         "html": "Verlaagd expressie bevordert tumorvorming"
     },
-	
-	{
+    {
         "x": 54,
         "y": 28,
         "w": 6,
         "h": 10,
         "html": "GEF<br/>GAP</br> RAG-RD"
     },
-	
-	{
+    {
         "x": 54.2,
         "y": 37.5,
         "w": 16,
         "h": 5,
         "html": "RAS-MAPKinase &#8594; MYC &#8594;"
     },
-	
-	{
+    {
         "x": 62,
         "y": 47,
         "w": 9,
         "h": 22,
         "html": "Arrestin<br/>GRK</br>Homologe<br/>Heterologe<br/>Desensitizing"
     },
-	
-	{
+    {
         "x": 46,
         "y": 46,
         "w": 11,
         "h": 4,
         "html": "DAG &#8594; PKi"
     },
-	
-	{
+    {
         "x": 42,
         "y": 49,
         "w": 15,
         "h": 6,
         "html": "cAMP &#8594; AC &#8594; PKA"
     },
-	
-	{
+    {
         "x": 47,
         "y": 56,
         "w": 9,
         "h": 5,
-        "html": "<a href='http://en.wikipedia.org/wiki/Patch_clamp'>Patch Clamping</a>"
+        "html": "Patch Clamping",
+        "references": {
+            "Patch Clamping": {
+                "url": "http://en.wikipedia.org/wiki/Patch_clamp"
+            }
+        }
     },
-	
-	{
+    {
         "x": 44,
         "y": 59,
         "w": 17,
         "h": 8,
         "html": "-60mV &#8594; +30mV &#8594; -60mV"
     },
-	{
+    {
         "x": 45.5,
         "y": 71,
         "w": 13,
         "h": 8,
         "html": "Luie K<sup>+</sup> kanalen"
     },
-	{
+    {
         "x": 47,
         "y": 78,
         "w": 12,
         "h": 7,
         "html": "Voltage regulated"
     },
-	
-	{
+    {
         "x": 47,
         "y": 84,
         "w": 12,
         "h": 7,
         "html": "Tether plug"
     },
-	{
+    {
         "x": 59,
         "y": 68,
         "w": 13,
         "h": 9,
         "html": "Twee dichte vormen en een open conformatie"
     },
-	
-	{
+    {
         "x": 59,
         "y": 80,
         "w": 12,
         "h": 7,
         "html": "Arg<sup>+</sup> &#8594; Alpha-helices"
     },
-	
-	{
+    {
         "x": 78,
         "y": 7,
         "w": 13,
         "h": 16,
         "html": "Verhoogde expressie van <br/> BH3<br/>BH1,2,3<br/>BH1,2,3,4<br/> Lijdt tot"
     },
-	
-	{
+    {
         "x": 74,
         "y": 25,
         "w": 5,
         "h": 7,
         "html": "P53"
     },
-	
-	{
+    {
         "x": 76,
         "y": 32,
         "w": 4,
         "h": 7,
         "html": "P21"
     },
-	
-	{
+    {
         "x": 72,
         "y": 40,
         "w": 21,
         "h": 5,
         "html": "G<sub>q</sub>-cycline &#8594; PRB &#8594; ERF"
-    },	
-	
-	{
+    },
+    {
         "x": 75,
         "y": 44,
         "w": 10,
         "h": 8,
         "html": "CDK geeft een fosfaatgroep aan"
     },
-	{
+    {
         "x": 79,
         "y": 51,
         "w": 10,
         "h": 8,
         "html": "2 phosphaat"
-    },	
-	
-	{
+    },
+    {
         "x": 87,
         "y": 51,
         "w": 7,
         "h": 6.5,
         "html": "TYR 15"
-    },	
-	
-	{
+    },
+    {
         "x": 87,
         "y": 58,
         "w": 7,
         "h": 6.5,
         "html": "THR 160"
-    },	
-	
-	{
+    },
+    {
         "x": 94,
         "y": 44,
-        "w": 6,
+        "w": 5.7,
         "h": 10,
         "html": "Positieve feedback"
-    },	
-	
-	{
+    },
+    {
         "x": 80.5,
         "y": 62,
-        "w": 19.5,
+        "w": 19,
         "h": 8,
         "html": "E3-ligase op de cycline"
     },
-	
     {
         "x": 81,
         "y": 69.5,
         "w": 10,
         "h": 8.5,
         "html": "(E1/E2)"
-    },
-    
+    }
 ]
